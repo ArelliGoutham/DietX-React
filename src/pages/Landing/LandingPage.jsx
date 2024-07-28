@@ -17,6 +17,15 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const authError = useSelector((state) => state.auth.error);
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+
+  useEffect(() => {
+    const user = sessionStorage.getItem('user');
+    if (user) {
+      navigate('/home');
+    }
+  }, [isAuthenticated]);
+
 
   const toggleForm = () => {
     setIsLogin(!isLogin);
