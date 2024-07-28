@@ -1,0 +1,120 @@
+/* Define your color variables */
+:root {
+  --main-font-color: #2e054e; /* Main font color */
+  --secondary-font-color: #888888; /* Secondary font color */
+  --primary-button-background: #2e054e; /* Primary button background color */
+  --primary-button-hover: #6300a3; /* Primary button hover color */
+  --primary-button-font: #ffffff; /* Primary button font color */
+  --secondary-button-background: #ed264f; /* Secondary button background color */
+  --secondary-button-hover: #ef345a; /* Secondary button hover color */
+  --secondary-button-font: #ffffff; /* Secondary button font color */
+  --primary-shallow-button-background: #2e054e; /* Primary shallow button background color */
+  --primary-shallow-button-hover: #6300a3; /* Primary shallow button hover color */
+  --primary-shallow-button-font: #ffffff; /* Primary shallow button font color */
+  --secondary-shallow-button-background: #ed264f; /* Secondary shallow button background color */
+  --secondary-shallow-button-hover: #ef345a; /* Secondary shallow button hover color */
+  --secondary-shallow-button-font: #ffffff; /* Secondary shallow button font color */
+  --main-background: #ffffff; /* Background color for the whole page */
+  --header-background: #333333; /* Header background color */
+  --header-text-color: #f1f1f1; /* Header text color */
+}
+
+/* General body styles */
+body {
+  background-color: var(--main-background);
+  color: var(--secondary-font-color);
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: var(--header-background);
+  color: var(--header-text-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Button styles */
+button.primary {
+  background-color: var(--primary-button-background);
+  color: var(--primary-button-font);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.primary:hover {
+  background-color: var(--primary-button-hover);
+}
+
+button.secondary {
+  background-color: var(--secondary-button-background);
+  color: var(--secondary-button-font);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.secondary:hover {
+  background-color: var(--secondary-button-hover);
+}
+
+/* Shallow buttons */
+button.primary-shallow {
+  background-color: var(--primary-shallow-button-background);
+  color: var(--primary-shallow-button-font);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.primary-shallow:hover {
+  background-color: var(--primary-shallow-button-hover);
+}
+
+button.secondary-shallow {
+  background-color: var(--secondary-shallow-button-background);
+  color: var(--secondary-shallow-button-font);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.secondary-shallow:hover {
+  background-color: var(--secondary-shallow-button-hover);
+}
+
+/* Section styles */
+section {
+  background-color: var(--main-background);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* Links styles */
+a {
+  color: var(--main-font-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form input styles */
+input,
+textarea {
+  border: 1px solid var(--secondary-font-color);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--main-font-color);
+  outline: none;
+}
