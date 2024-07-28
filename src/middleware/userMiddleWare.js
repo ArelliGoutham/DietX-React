@@ -3,7 +3,7 @@ import Cookies from 'js-cookie';
 
 import { loginStart,loginSuccess,loginFailure,signupStart,signupSuccess,signupFailure,logout } from '../redux/slices/AuthSlice';
 
-const USER_DETAILS_API = 'http://localhost:5501/api';
+const USER_DETAILS_API = `${process.env.REACT_APP_API_URL}/api`;
 
 export const login = (email, password) => async (dispatch) => {
   dispatch(loginStart());
